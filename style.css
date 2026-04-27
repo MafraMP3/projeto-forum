@@ -1,5 +1,12 @@
+
+#formulario{
+    margin-top: 300px;
+}
 body{
-    background-image: url(assets/images/tie-dye-background.jpg  );
-    background-repeat: no-repeat;
-    background-size:  cover;
+    background-image: url(assets/images/tie-dye-background.jpg);
+    background-size: cover;
+}
+
+.top-40{
+   top: 40% !important;
 }
