@@ -4,16 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const inputSenha = document.getElementById('senha');
 
     form.addEventListener('submit', function(event) {
-        // Evita que o formulário recarregue a página antes da nossa lógica
+        
         event.preventDefault();
         event.stopPropagation();
 
-        // Resetamos a validação customizada
+        
         inputUsuario.setCustomValidity("");
         inputSenha.setCustomValidity("");
 
 
-        // Verificamos os valores específicos
+        
         const usuarioValido = inputUsuario.value === 'admin';
         const senhaValida = inputSenha.value === '1234';
 
@@ -25,12 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
             inputSenha.setCustomValidity("Senha inválida");
         }
 
-        // Se o formulário passar em todas as regras (admin/1234)
+        
         if (form.checkValidity()) {
-            // REDIRECIONAMENTO AQUI:
-            window.location.href = "home.html"; // Altere para o nome da sua página de destino
+            
+            window.location.href = "home.html"; 
         } else {
-            // Se estiver errado, aplica as cores de erro do Bootstrap
+            
             form.classList.add('was-validated');
         }
 
