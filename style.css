@@ -5,6 +5,7 @@
 body{
    background-color: white;
    overflow: hidden;
+   
 }
 
 .top-40{
@@ -31,4 +32,94 @@ body{
 nav{
     font-family: 'callison', sans-serif;
     font-size: 20;
+}
+
+.login-area {
+    position: relative;
+    height: 100vh;
+    background: #f5f5f5;
+    z-index: 10
+}
+
+.bg-layer {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.img1 {
+    background-image: url("assets/images/imagem-entrada.jpg");
+    width: 850;
+    height: 850;
+    top: 30;
+    left: 50px;
+     z-index: 1;
+}
+
+
+    
+.img2 {
+    background-image: url("assets/images/img-3.png");
+    width: 1200;
+    height: 990px;
+    top: 10px;
+    left: 30;
+     z-index: 1;
+}
+
+.img3 {
+    background-image: url("assets/images/imagem-cavalo.jpg");
+    width: 480px;
+    height: 500px;
+    top: 470px;
+    left: 90px;
+     z-index: 1;
+}
+
+.img4 {
+    position: absolute;
+       right: 0;
+    bottom: 0vh;
+    width: 85vw;
+    max-width: 1000vw;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+     z-index: 1;
+}
+
+
+.img5 {
+    background-image: url("assets/images/escrita.png");
+    width: 400;
+    height: 850;
+    top: 700px;
+    left: 750px;
+     z-index: 1;
+}
+
+.img6 {
+    background-image: url(assets/images/art-monstro.png);
+    width: 520;
+    height: 850;
+    top: 590px;
+    left: 1455px;
+     z-index: 1;
+}
+#container-login {
+    position: absolute;
+
+    top:-100px;
+    right: 450px;
+
+    width: 35vw;
+    max-width: 420px;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999; 
 }
