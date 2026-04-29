@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         inputUsuario.setCustomValidity("");
         inputSenha.setCustomValidity("");
 
+
         // Verificamos os valores específicos
         const usuarioValido = inputUsuario.value === 'admin';
         const senhaValida = inputSenha.value === '1234';
