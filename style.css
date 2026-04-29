@@ -9,3 +9,7 @@ body{
 .top-40{
    top: 40% !important;
 }
+
+#video-background{
+    margin-top: -100px;
+}
