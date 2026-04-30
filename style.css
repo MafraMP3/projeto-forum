@@ -4,7 +4,7 @@
 }
 body{
    background-color: white;
-   overflow: hidden;
+  
    
 }
 
@@ -32,6 +32,16 @@ body{
 nav{
     font-family: 'callison', sans-serif;
     font-size: 20;
+}
+p{
+    font-family: 'callison', sans-serif;
+
+}
+
+
+.login-box {
+    position: relative;
+    z-index: 9999;
 }
 
 .login-area {
@@ -108,18 +118,25 @@ nav{
      z-index: 1;
 }
 #container-login {
-    position: absolute;
-
-    top:-100px;
-    right: 450px;
-
-    width: 35vw;
-    max-width: 420px;
+    position: relative;
+    z-index: 1000; 
+}
+#video-background {
+    width: 100%;
     height: 100vh;
+    object-fit: cover;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        white 0%,
+        white 85%,
+        transparent 100%
+    );
 
-    z-index: 999; 
+    mask-image: linear-gradient(
+        to bottom,
+        white 0%,
+        white 85%,
+        transparent 100%
+    );
 }
