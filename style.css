@@ -140,3 +140,25 @@ p{
         transparent 100%
     );
 }
+
+.mascara {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+
+    background: 
+        linear-gradient(to bottom, transparent, white),
+        url("assets/images/simbolo-branco.png");
+
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover, contain;
+
+    pointer-events: none;
+}
+
+.fs-10{
+    font-size: 20px;
+}
