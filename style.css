@@ -87,26 +87,31 @@ p{
      z-index: 1;
 }
 
-.img4 {
+#img-direita {
     position: absolute;
-       right: 0;
-    bottom: 0vh;
-    width: 85vw;
-    max-width: 1000vw;
-    height: auto;
+    right: 0;
+    bottom: 0;
+    /* Faz a imagem ocupar 90% da altura da tela */
+    height: auto; 
+    width: auto; /* Deixa a largura proporcional à altura */
+    max-width: 80vw; /* Impede que uma imagem ocupe a tela inteira sozinha */
     object-fit: contain;
     pointer-events: none;
-     z-index: 1;
+    z-index: -1;
 }
 
-
-.img5 {
-    background-image: url("assets/images/escrita.png");
-    width: 400;
-    height: 850;
-    top: 700px;
-    left: 750px;
-     z-index: 1;
+#img-esquerda {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* Faz a imagem ocupar 90% da altura da tela */
+    height: auto;
+    width: auto;
+    max-width: 80vw;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: -1;
+    transform: scaleX(-1);
 }
 
 .img6 {
