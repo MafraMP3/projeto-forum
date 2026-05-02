@@ -171,3 +171,8 @@ p{
    
   z-index: 1000;
 }
+
+section[id] {
+  /* Empurra o ponto de parada 40% para baixo da tela */
+  scroll-margin-top: 30vh; 
+}
